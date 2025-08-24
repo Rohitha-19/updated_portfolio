@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="head">PORTFOLIO</h1>
+        <ul class="links">
+            <li class="inlink"><a href="index.html">Home</a></li>
+            <li class="ablink"><a href="about.html">About</a></li>
+            <li class="edlink"><a href="education.html">Education</a></li>
+            <li class="sklink"><a href="skills.html">Skills</a></li>
+            <li class="polink"><a href="projects.html">Projects</a></li>
+            <li class="colink"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div>
+            <ul class="side-navbar-links">
+              <li class="side-navbar-link"><a href="index.html">Home</a></li>
+              <li class="side-navbar-link"><a href="about.html">About</a></li>
+              <li class="side-navbar-link"><a href="education.html">Education</a></li>
+              <li class="side-navbar-link"><a href="skills.html">Skills</a></li>
+              <li class="side-navbar-link"><a href="projects.html">Projects</a></li>
+              <li class="side-navbar-link"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--for scroll animation-->
+    <section class="home hidden-section" id="home">
+    <section class="home">
+        <div>
+            <h2>I'm Rohitha V</h2>
+            <h3 class="color">A Passionate Computer Science Engineering Student<br> & aspiring <span class="desire" id="typed-text"></span></h3>
+            <h3 class="colors">This Portfolio showcases my skills,projects & journey as a developer.</h3>
+            <div class="media">
+                <a href="Resume.pdf" class="resume" type="submit">Resume</a>
+                <br>
+                <a href="https://www.linkedin.com/in/rohitha-kumar-v06"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Rohitha-19"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section class="about hidden-section" id="abouts">
+    <h3 class="about-me">About Me</h3>
+    <div class="abt">
+        <div>
+            <p>I'm Rohitha V, A second-year Computer Science Engineering student at Mailam Engineering College, with a strong passion for software development & front-end technologies.I enjoy transforming ideas into functional digital solutions through code.I'm proficient in HTML, CSS, JavaScript, Python, C, and C++, and I continually work on enhancing my skills through self-learning & hands-on projects.My interests include web development, problem-solving, data structures, algorithms & AI/ML.I continuously learn & grow through coding challenges, projects & hands-on practice, aiming to become a skilled & versatile software engineer.</p>
+        </div>
+    </div>
+    </section>
+    <br>
+    <section class="education hidden-section" id="education">
+    <div class="qualification">
+        <h3 class="edu">🎓 Education</h3>
+        <div class="details">
+            <div>
+                <h3>College</h3>
+                <br>
+                <h4 style="font-weight:bold ; color: rgb(229, 255, 0);">Mailam Engineering College,<br>Villupuram</h4>
+                <h5 style="font-weight:bold ; padding: 5px; color:rgb(25, 88, 6);">BE.CSE</h5>
+                <h5 style="color: rgb(133, 9, 9);">📅 2024-2028</h5>
+                <br>
+            </div>
+        </div>
+        <div class="details">
+            <div>
+                <h3>HSC</h3>
+                <br>
+                <h4 style="font-weight:bold ; color: rgb(229, 255, 0);">Government Model Girls Hr Sec,<br>Villupuram</h4>
+                <h5 style="font-weight:bold ; padding: 5px; color:rgb(25, 88, 6);">Percentage: 89.5%</h5>
+                <h5 style="color: rgb(133, 9, 9);">📅 2023-2024</h5>
+                <br>
+            </div>
+        </div>
+        <div class="details">
+            <div>
+                <h3>SSLC</h3>
+                <br>
+                <h4 style="font-weight:bold ; color: rgb(229, 255, 0);">Government Model Girls Hr Sec,<br>Villupuram</h4>
+                <h5 style="font-weight:bold ; padding: 5px; color:rgb(25, 88, 6);">Percentage: 89.8%</h5>
+                <h5 style="color: rgb(133, 9, 9);">📅  2021-2022</h5>
+                <br>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="skills hidden-section" id="skill">
+    <h3 style="padding-bottom: 10px;" class="myskills">Skills</h3>
+    <div class="myskill">
+        <h3 class="pskill">Programming Skills</h3>
+        <div class="skills">
+            <div class="skill-card">
+                <div>
+                <img src="img/python.png" style="width: 120px; height: 110px;">
+                <p>PYTHON</p>
+                </div>
+                <div>
+                <img src="img/c++.svg" style="width: 100px; height: 100px;">
+                <p>C++</p>
+                </div>
+                <div>
+                <img src="img/c.jpeg" style="width: 100px; height: 100px;">
+                <p>C</p>
+                </div>
+                <div>
+                <img src="img/js.webp" style="width: 100px; height: 100px;">
+                <p>JAVASCRIPT</p>
+                </div>
+            </div>
+        <br>
+        <h3 class="wskill">Web Technologies</h3>
+            <div class="skills-card">
+                <div>
+                <img src="img/html.png" style="width: 100px; height: 100px;">
+                <p>HTML</p>
+                </div>
+                <div>
+                <img src="img/css.png" style="width: 85px; padding-top: 15px; height: 100px;">
+                <p>CSS</p>
+                </div>
+            </div>
+        <br>
+        <h3 class="tools">Tools</h3>
+            <div class="tlskills-card">
+                <div>
+                <img src="img/github.png" style="width: 100px; height: 100px;">
+                <p>GITHUB</p>
+                </div>
+                <div>
+                <img src="img/vscode.png" style="width: 100px; height: 100px;">
+                <p>VISUAL STUDIO CODE</p>
+                </div>
+                <div>
+                <img src="img/arduino.png" style="width: 100px; height: 100px;">
+                <p>ARDUINO IDE</p>
+                </div>
+            </div>   
+        <br> 
+        </div>
+    </div>
+    </section>
+    <section class="projects hidden-section" id="hprojects">
+    <div class="myprojects">
+        <section class="projects" id="Project">
+            <h2 style="padding: 50px;" class="ptitle">Projects</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/iot.jpeg" alt="iot" class="project-img">
+                        <h3 class="proname">GAS LEAKAGE DETECTION</h3>
+                        <p class="prodes">A System that detects gas leaks using an MQ-2 gas sensor. It uses Arduino UNO R3 and GSM SIM900A Module to send instant call & SMS alerts,helping prevent accidents in homes</p>
+                        <p class="tech-stack">Achievement: Won Third Prize with the cash prize of ₹500 at Mailam Engineering College</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/book ordering web.jpeg" alt="book" class="project-img">
+                        <h3 class="proname">BOOK ORDERING WEBSITE</h3>
+                        <p class="prodes">A front-end website to explore books and simulate order placement with a mock payment display.</p>
+                        <p class="tech-stack">Tech Stack: HTML, CSS, JS</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/portfolio.jpeg" alt="portfolio" class="project-img">
+                        <h3 class="proname">PERSONAL PORTFOLIO</h3>
+                        <p class="prodes">A Portfolio website to showcase my skills, projects, and resume etc... Built with a clean and responsive web design.</p>
+                        <p class="tech-stack">Tech Stack: HTML, CSS, JS</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/to-do list.jpeg" alt="todo list" class="project-img">
+                        <h3 class="proname">TO-DO LIST</h3>
+                        <p class="prodes">An interactive task manager to add, edit, delete, and complete daily tasks. Built to boost productivity with style.</p>
+                        <p class="tech-stack">Tech Stack: HTML, CSS, JS</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </div>
+    </section>
+    <section class="contact hidden-section" id="hcontact">
+    <div class="contact">
+        <h3>Get In Touch</h3>
+        <div class="contacts">
+        <div class="git">
+            <a href="https://github.com/Rohitha-19"><i class="fab fa-github"></i><br></a>
+            <span style="font-size: 15px;">GitHub</span>
+        </div>
+        <div class="Linkedin">
+            <a href="https://www.linkedin.com/in/rohitha-kumar-v06"><i class="fab fa-linkedin"></i><br></a>
+            <span style="font-size: 15px;">Linkedin</span>
+        </div>
+        <div class="Email">
+            <a style="color: rgb(98, 32, 160);" href="mailto:rohithakumar271@gmail.com"><i class="fas fa-envelope"></i><br></a>
+            <span style="font-size: 15px;">Email</span>
+        </div>
+        </div>
+        <hr>
+        <footer class="footer">
+            <p style="font-size: 15px;padding-bottom: 10px;"> &copy; <span id="year"></span> Rohitha V. All Rights Reserved.</p>
+        </footer>
+    </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swipe.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

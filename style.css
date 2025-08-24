@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+}
+body{
+    color: black;
+}
+.navbar{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+}
+.head{
+    position: relative;
+    text-decoration: none;
+    cursor: default;
+    padding-top: 5px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    font-weight: bold;
+    color: blueviolet;
+}
+.home h2{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.links{
+    list-style: none;
+    display: flex;
+    padding-top: 5px;
+    gap: 20px;
+}
+.links li a{
+    text-decoration: none;
+    color: black;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+.links li a:hover{
+    transform: scale(1.2);
+    transition: 0.1s ease;
+    color: blueviolet;
+    text-decoration:underline;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    padding-top: 6px;
+}
+.color{
+    color: blueviolet;
+}
+.colors{
+    color: blueviolet;
+}
+.media{
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin-left: 120%;
+    gap: 10px;
+    color: blueviolet;
+}
+.menu-toggle{
+    display:none;
+}
+.side-navbar{
+    background-color:blueviolet;
+    width:30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -30%;
+    padding: 20px;
+    transition: left 0.3s ease;
+    opacity: 1;
+    z-index: 9999;
+    color: black;
+}
+.side-navbar-link {
+    margin-bottom: 30px;
+    display: flex;
+}
+.side-navbar-link a {
+    text-decoration: none;
+    color: black;
+}
+.side-navbar-link a:hover {
+    transition: 0.2s ease;
+    transform: scale(1.2);
+    color: black;
+    text-decoration:underline;
+}
+/*Media Query (For Responsive Web)*/
+@media screen and (max-width: 700px) {
+    .inlink,.ablink,.edlink,.sklink,.polink,.colink{
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .media{
+        flex-direction: row;
+        margin-left: 4%;
+        padding: 10px;
+        justify-content: center;
+    }
+    .resume{
+        font-size: 20px;
+        padding:15px;
+    }
+    .abt{
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-me{
+        flex-direction: column;
+    }
+    .details{ 
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .qualification{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .project-container{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .swiper-slide img{
+        width: 100%;
+        height: auto;
+    }
+}
+.qualification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: rgb(189, 127, 247);
+    padding-bottom: 80px;
+}
+.resume{
+    font-size: 22px;
+    list-style: none;
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border: none;
+    background-color: rgb(149, 69, 223);
+}
+.resume:hover{
+    transform: scale(1.1);
+    color: white;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+.about-me{
+    text-align: center;
+    color: black;
+    background-color: blueviolet;
+    font-size: 30px;
+    padding: 10px;
+}
+.about-me:hover{
+    text-decoration: underline;
+}  
+.abt{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 30px;
+    font-size: large;
+    gap: 50px;
+    background-color: blueviolet;
+    padding: 70px;
+    margin-bottom: 40px;
+}
+.edu{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding: 30px;
+}
+.edu:hover{
+    text-decoration: underline;
+}  
+.details{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 45px;
+    padding-right: 50px;
+    border: solid 1px;
+    border-radius: 20px;
+    color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 40%;
+    background-color: rgb(156, 69, 238);
+}
+.details:hover{
+    transform: scale(1.03);
+    text-decoration: none;
+    transition: 0.1s ease;
+    box-shadow: 2px 4px 15px black;
+}
+.myskill{
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.pskill{
+    font-size: 30px;
+    padding: 30px; 
+    text-decoration: underline; 
+}
+.wskill{
+    font-size: 30px;
+    padding: 40px;
+    text-decoration: underline;
+}
+.tools{
+    font-size: 30px;
+    padding: 40px;
+    text-decoration: underline;
+}
+.skill-card :hover{
+    transform: scale(1.1);
+    transition: 0.1s ease;
+}
+.skills-card :hover{
+     transform: scale(1.1);
+    transition: 0.1s ease;
+}
+.tlskills-card :hover{
+    transform: scale(1.1);
+    transition: 0.1s ease;
+}
+.skill-card{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap; 
+    align-items: center;
+    text-align: center;
+}
+.skills-card{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap; 
+}
+.tlskills-card{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap; 
+}
+.myskills{
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    padding: 30px;
+}
+.myprojects{
+    background-color: white;
+}
+.ptitle{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+.swiper{
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    padding: 50px;
+}
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+.swiper-slide img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 270px;
+    height: 190px;
+}
+.proname{
+    padding-bottom: 25px;
+}
+.prodes{
+    padding-bottom: 30px;
+}
+.tech-stack{
+    font-weight: bold;
+}
+.contact h3{
+    font-size: 25px;
+    text-align: center;
+    padding: 60px;
+}
+.contact div{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+}
+.contacts{
+    display: flex;
+    gap: 40px;
+    padding-bottom: 15px;
+}
+.contact{
+    background-color: rgba(150, 143, 143, 0.836);
+    padding-bottom: 5px;
+}
+.footer{
+    padding-top: 30px;
+    text-align: center;
+}
+/* Hidden by default */
+.hidden-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.visible-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    } 
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    } 
+}
