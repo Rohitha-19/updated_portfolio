@@ -221,7 +221,7 @@ body{
     color: black;
     margin-left: 100px;
     margin-right: 100px;
-    width: 40%;
+    width: 50%;
     background-color: rgb(156, 69, 238);
 }
 .details:hover{
@@ -383,4 +383,5 @@ body{
         transform: translateY(0px);
         opacity: 1;
     } 
+
 }
